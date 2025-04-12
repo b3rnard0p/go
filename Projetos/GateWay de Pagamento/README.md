@@ -1,8 +1,8 @@
-# Gateway de Pagamento - Imersão Full Cycle
+# Gateway de Pagamento 
 
 ## Sobre o Projeto
 
-Este projeto foi desenvolvido durante a [Imersão Full Stack & Full Cycle](https://imersao.fullcycle.com.br/evento/), onde construímos um Gateway de Pagamento completo utilizando arquitetura de microsserviços.
+Este projeto foi desenvolvido durante a Imersão Full Stack & Full Cycle, onde construí um Gateway de Pagamento completo utilizando arquitetura de microsserviços.
 
 O objetivo é demonstrar a construção de um sistema distribuído moderno, com separação de responsabilidades, comunicação assíncrona e análise de fraudes em tempo real.
 
@@ -55,18 +55,10 @@ Cada componente do sistema possui instruções específicas de instalação e co
 - **Serviço Antifraude**: Consulte o README na pasta `/nestjs-antifraude` 
 - **Frontend**: Consulte o README na pasta `/next-frontend`
 
-> **Importante**: É fundamental seguir a ordem de execução mencionada acima, pois cada serviço depende dos anteriores para funcionar corretamente.
-
 ## Pré-requisitos Gerais
 
 Para executar todos os componentes do projeto, você precisará ter instalado:
 
-- [Docker](https://www.docker.com/get-started)
-- [Docker Compose](https://docs.docker.com/compose/install/)
+- Docker
+- Docker Compose
 - Git
-
-## Regras de Negócio Importantes
-
-- Transações acima de R$ 10.000 são automaticamente enviadas para análise e ficam com status "pendente"
-- Transações menores são processadas imediatamente
-- A interface mostra status diferenciados por cores: verde (aprovado), amarelo (pendente), vermelho (rejeitado)
